@@ -2,4 +2,4 @@
 	let test = 'test';
 </script>
 
-<p>{test}</p>
+{test}

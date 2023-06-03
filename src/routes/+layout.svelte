@@ -2,7 +2,7 @@
 	import Panel from '$lib/components/Panel.svelte';
 </script>
 
-<div>
+<div class="de-wrapper">
 	<Panel />
 	<slot />
 </div>
