@@ -1,7 +1,7 @@
 <script lang="ts">
 </script>
 
-<div />
+<div>+page</div>
 
 <style>
 </style>

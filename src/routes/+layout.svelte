@@ -8,4 +8,8 @@
 </div>
 
 <style>
+	.de-wrapper {
+		display: flex;
+		flex-direction: column;
+	}
 </style>
