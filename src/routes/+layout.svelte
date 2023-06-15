@@ -1,6 +1,5 @@
 <script lang="ts">
 	import { browser } from '$app/environment';
-	import Panel from '$lib/components/Panel.svelte';
 	import { pageWidths, mediaQuery } from '$lib/stores/store.global';
 
 	const setWidthValues = () => {
@@ -16,12 +15,11 @@
 <svelte:window on:resize={setWidthValues} />
 
 <div class="de-wrapper">
-	<Panel />
 	{#if $mediaQuery.sm}
 		<div class="mobile">
 			<span>
-				access<br />on<br />a<br />computer<br />for<br />the<br />best<br />experience.
-			</span>
+				use computer bro <br /> its a desktop os <br /> so obviously it ain't workin on mobile</span
+			>
 		</div>
 	{:else}
 		<slot />
@@ -29,10 +27,6 @@
 </div>
 
 <style>
-	.de-wrapper {
-		display: flex;
-		flex-direction: column;
-	}
 	div span {
 		font-weight: bold;
 		line-height: 1rem;

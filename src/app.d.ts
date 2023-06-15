@@ -35,6 +35,11 @@ declare global {
 		lg: boolean;
 		xl: boolean;
 	}
+
+	interface User {
+		name: string;
+		password: string;
+	}
 }
 
 export {};

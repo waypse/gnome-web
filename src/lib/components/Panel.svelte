@@ -1,12 +1,17 @@
 <script lang="ts">
 	import { formatTime } from '$lib/stores/store.global';
 	import Icon from '@iconify/svelte';
+
+	export let noActivities = false;
+	export let color = 'rgba(14,14,14)';
 </script>
 
-<div class="pannel">
+<div class="pannel" style="--panel-color: {color}">
 	<div>
-		<div class="button">Activities</div>
-		<div class="button">cc</div>
+		{#if !noActivities}
+			<div class="button">Activities</div>
+			<div class="button">cc</div>
+		{/if}
 	</div>
 	<div class="time">
 		<div class="button">
@@ -43,7 +48,7 @@
 		display: grid;
 		align-items: center;
 		grid-template-columns: 1fr 1fr 1fr;
-		background-color: rgb(14, 14, 14);
+		background-color: var(--panel-color);
 		color: white;
 		box-sizing: border-box;
 		padding: 0.25rem;
@@ -58,7 +63,7 @@
 		bottom: -40px;
 		height: 40px;
 		width: 15px;
-		box-shadow: 0 -25px 0 0 rgb(14, 14, 14);
+		box-shadow: 0 -25px 0 0 var(--panel-color);
 	}
 	.pannel::before {
 		border-top-left-radius: 20px;

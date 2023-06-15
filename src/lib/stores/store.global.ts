@@ -12,9 +12,9 @@ export const localtime = readable<Date>(new Date(), (set) => {
 });
 
 export const timeSettings = persisted<TimeSettings>('timeSettings', {
-	hour: 'numeric',
+	hour: '2-digit',
 	minute: 'numeric',
-	second: 'numeric',
+	second: undefined,
 	hour12: false,
 	weekday: 'short',
 	year: undefined,
@@ -41,3 +41,5 @@ export const mediaQuery = writable<MediaQuery>({
 	lg: false,
 	xl: false
 });
+
+export const user = persisted<User | null>('user', null);
