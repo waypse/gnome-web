@@ -15,9 +15,11 @@ export const timeSettings = persisted<TimeSettings>('timeSettings', {
 	hour: 'numeric',
 	minute: 'numeric',
 	second: 'numeric',
-	hour12: true,
-	weekday: 'long',
-	year: 'numeric'
+	hour12: false,
+	weekday: 'short',
+	year: undefined,
+	month: 'short',
+	day: 'numeric'
 });
 
 export const formatTime = derived([localtime, timeSettings], ([$localtime, $timeSettings]) => {

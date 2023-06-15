@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { browser } from '$app/environment';
 	import Panel from '$lib/components/Panel.svelte';
 	import { pageWidths, mediaQuery } from '$lib/stores/store.global';
 
@@ -9,7 +10,7 @@
 		}
 	};
 
-	setWidthValues();
+	if (browser) setWidthValues();
 </script>
 
 <svelte:window on:resize={setWidthValues} />

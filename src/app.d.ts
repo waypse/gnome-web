@@ -17,6 +17,8 @@ declare global {
 		hour12: boolean;
 		weekday: 'long' | 'short' | 'narrow' | undefined;
 		year: 'numeric' | '2-digit' | undefined;
+		month: 'numeric' | '2-digit' | 'long' | 'short' | 'narrow' | undefined;
+		day: 'numeric' | '2-digit' | undefined;
 	}
 
 	interface PageWidths {
