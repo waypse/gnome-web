@@ -14,7 +14,7 @@
 	.pannel {
 		display: flex;
 		justify-content: space-between;
-		background-color: black;
+		background-color: rgb(14, 14, 14);
 		color: white;
 		box-sizing: border-box;
 		padding: 0.25rem 1rem;

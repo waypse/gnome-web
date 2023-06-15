@@ -25,6 +25,7 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"@neodrag/svelte": "^2.0.3"
+		"@neodrag/svelte": "^2.0.3",
+		"svelte-local-storage-store": "^0.5.0"
 	}
 }
